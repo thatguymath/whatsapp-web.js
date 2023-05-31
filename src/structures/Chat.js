@@ -75,12 +75,6 @@ class Chat extends Base {
          */
         this.muteExpiration = data.muteExpiration;
 
-        /**
-         * Last message fo chat
-         * @type {Message}
-         */
-        this.lastMessage = data.lastMessage ? new Message(super.client, data.lastMessage) : undefined;
-        
         return super._patch(data);
     }
 
